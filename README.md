@@ -15,4 +15,4 @@ git clone https://github.com/neavailable/Plinko.git
 
 and open it in Unity.
 
-Have func =]
+Have fun =]

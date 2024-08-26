@@ -14,11 +14,8 @@ public abstract class Ball : Color_types
 
         if ( collision2D.gameObject.CompareTag("score_box") )
         {
-            if (collision2D_color.get_color() == color)
-            {
-                scores_number.GetComponent<Scores_number>().change_scores(3);
-            }
-
+            if (collision2D_color.get_color() == color) scores_number.GetComponent<Scores_number>().change_scores(3);
+            
             Destroy(gameObject);
         }
     }

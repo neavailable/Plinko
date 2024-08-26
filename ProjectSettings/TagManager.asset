@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - score_box
-  - you_lose
+  - ball
   layers:
   - Default
   - TransparentFX

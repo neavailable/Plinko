@@ -10,7 +10,7 @@ public class Scores_number : MonoBehaviour
 
     private void Start()
     {
-        scores = 200;
+        scores = 5000;
 
         text_component = gameObject.GetComponent<TMP_Text>();
 

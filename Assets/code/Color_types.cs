@@ -7,8 +7,15 @@ public abstract class Color_types : MonoBehaviour
 
     [SerializeField] protected color_types color;
 
+    [SerializeField] protected int cost;
+
     public color_types get_color()
     {
         return color;
+    }
+
+    public int get_cost()
+    {
+        return cost;
     }
 }

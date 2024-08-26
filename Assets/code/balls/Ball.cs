@@ -1,8 +1,11 @@
 using UnityEngine;
 
 
-public class Ball : Color_types
+public abstract class Ball : Color_types
 {
+    [SerializeField] private GameObject scores_number;
+ 
+
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         if (collision2D == null) return;
@@ -11,7 +14,12 @@ public class Ball : Color_types
 
         if ( collision2D.gameObject.CompareTag("score_box") )
         {
-            if (collision2D_color.get_color() == color) Destroy(gameObject);
+            if (collision2D_color.get_color() == color)
+            {
+                scores_number.GetComponent<Scores_number>().change_scores(3);
+            }
+
+            Destroy(gameObject);
         }
     }
 

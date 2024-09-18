@@ -1,5 +1,5 @@
 ## Plinko
-___
+__
  
 ### Rules
 
